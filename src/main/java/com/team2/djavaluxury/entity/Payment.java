@@ -47,14 +47,13 @@ public class Payment {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    // Method untuk mengupdate waktu updatedAt setiap kali entitas di-persist atau update
     @PrePersist
     @PreUpdate
     public void updateTimestamps() {
-        updatedAt = LocalDateTime.now();  // Set updatedAt to current time
+        updatedAt = LocalDateTime.now(); 
     }
 
-    @OneToOne(mappedBy = "payment") // ini harus sama dengan attribute di booking
+    @OneToOne(mappedBy = "payment")
     private Booking booking;
 }
 

@@ -45,7 +45,7 @@ public class Booking {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     @ToString.Exclude
-    @JsonIgnore // Hindari serialisasi referensi ke Booking
+    @JsonIgnore // to avoid circular reference
     private User user;
 
     @ManyToOne(fetch = FetchType.EAGER)

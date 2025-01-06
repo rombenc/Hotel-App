@@ -11,6 +11,7 @@ The backend of the Djava Luxury App project is responsible for handling all serv
 - **JWT Token Authentication**: Ensures secure communication between the client and server.
 - **Spring Data JPA**: Simplifies data access and persistence using the Java Persistence API.
 - **JSR-303 and Spring Validation**: Enables validation of objects based on annotations.
+- **Midtrans**: A third-party payment gateway used to process transactions securely and efficiently.
 - **OpenAPI and Swagger UI Documentation**: Generates documentation for the API endpoints.
 - **Docker**: Facilitates containerization of the backend application for deployment.
 

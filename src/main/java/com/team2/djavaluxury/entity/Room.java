@@ -30,7 +30,7 @@ public class Room {
     private String status;
 
     @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
-    @ToString.Exclude // Tambahkan ini
-    @JsonIgnore // Hindari serialisasi referensi ke Booking
+    @ToString.Exclude
+    @JsonIgnore
     private List<Booking> booking = new ArrayList<>();
 }
